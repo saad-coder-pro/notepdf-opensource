@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="55%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer rounded square: red gradient + white border (matches app UI) -->
+  <rect x="16" y="16" width="480" height="480" rx="96" ry="96"
+        fill="url(#bg)" stroke="#ffffff" stroke-width="20"/>
+
+  <!-- White PDF document silhouette -->
+  <path fill="#ffffff" d="
+    M 165 130
+    L 300 130
+    L 355 185
+    L 355 380
+    Q 355 390 345 390
+    L 165 390
+    Q 155 390 155 380
+    L 155 140
+    Q 155 130 165 130
+    Z"/>
+
+  <!-- Folded top-right corner (subtle grey) -->
+  <path fill="#e5e7eb" d="M 300 130 L 355 185 L 300 185 Z"/>
+
+  <!-- Two faint text lines (file feel) -->
+  <rect x="185" y="215" width="140" height="12" rx="6" fill="#dc2626" opacity="0.18"/>
+  <rect x="185" y="240" width="118" height="12" rx="6" fill="#dc2626" opacity="0.18"/>
+
+  <!-- PDF label ribbon -->
+  <rect x="185" y="295" width="140" height="65" rx="8" fill="#dc2626"/>
+  <text x="255" y="342"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="900" font-size="38"
+        fill="#ffffff" text-anchor="middle" letter-spacing="1">PDF</text>
+</svg>
